@@ -1,0 +1,94 @@
+html, body {
+    background-color: whitesmoke;
+   
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+h1, h2, h3 {
+    font-weight: 300;
+}
+
+.home {
+    flex: 1;
+    display: flex;
+    position: relative;
+    padding-left: 3vw;
+    padding-right: 3vw;
+   
+}
+
+.home-left {
+    position: relative;
+    max-width: 50vw;
+    padding-right: 10vw;
+}
+
+.home-right {
+    padding-top: 20vh;
+}
+.nav-item{
+   
+    margin-top: 2vh;
+    padding-top: 0;
+}
+
+.nav-item a {
+    font-size: 15vh;
+    font-weight: 300;
+    text-decoration: underline;
+    color: black;
+}
+.nav-item a:hover {
+    text-decoration-color:cornflowerblue;
+}
+
+footer {
+    background-color: #333;
+    color: lightgray;
+    text-align: center;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials {
+    background-color: black;
+    margin-top: 2px;
+    padding-top: 2vh;
+    display: flex;
+    align-items: center;
+    height: 5vh;   
+    justify-content: center;
+    padding-bottom: 2vh;
+}
+
+.socials img {
+    margin: 1vw;
+    display: inline-block;
+    position: relative;
+    width: auto;
+    height: 5vh;
+} 
+
+.home-about {
+    margin-top: 50vh;
+}
+
+@media (max-width: 786px) {
+    
+    .home {
+        flex-direction: column;
+    }
+   
+   }
+    

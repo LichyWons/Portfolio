@@ -1,12 +1,13 @@
 html, body {
     background-color: whitesmoke;
-   
+    background-image: url(/images/moon-close-up-picjumbo-com.jpg);
+    background-attachment: fixed;
     height: 100%;
     width: 100%;
     margin: 0;
     font-family: 'Roboto', sans-serif;
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -28,30 +29,35 @@ h1, h2, h3 {
 
 .home-left {
     position: relative;
-    max-width: 50vw;
     padding-right: 10vw;
+    color: whitesmoke;
 }
-
 .home-right {
-    padding-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.nav-home {
+    display: flex;
+    flex-direction: column;
 }
 .nav-item{
-   
     margin-top: 2vh;
     padding-top: 0;
 }
 
 .nav-item a {
-    font-size: 15vh;
+    font-size: 8vw;
     font-weight: 300;
-    text-decoration: underline;
-    color: black;
+    text-decoration: none;
+    color:#FFD43A;
 }
 .nav-item a:hover {
-    text-decoration-color:cornflowerblue;
+    color: #FAB005;
 }
 
 footer {
+    font-size: xx-small;
     background-color: #333;
     color: lightgray;
     text-align: center;
@@ -62,23 +68,22 @@ footer {
 }
 
 .socials {
-    background-color: black;
     margin-top: 2px;
-    padding-top: 2vh;
-    display: flex;
-    align-items: center;
-    height: 5vh;   
-    justify-content: center;
-    padding-bottom: 2vh;
+    display: flex; 
+    justify-content: space-evenly;
 }
 
-.socials img {
+.socials i {
     margin: 1vw;
     display: inline-block;
     position: relative;
     width: auto;
-    height: 5vh;
+    color: #FFD43A;
+    font-size: 5vw;
 } 
+.socials i:hover {
+    color: #FAB005;
+}
 
 .home-about {
     margin-top: 50vh;
@@ -89,6 +94,20 @@ footer {
     .home {
         flex-direction: column;
     }
-   
-   }
+    .socials {
+        margin: auto;
+    }
+    .socials i {
+        font-size: 15vw;
+    }
+    .nav-item a {
+        font-size: 17vw;
+    }
+    .home-about {
+        margin-top: 15vh;
+    }
+    .home-right {
+        margin-top: 5vh;
+    }
+    }
     

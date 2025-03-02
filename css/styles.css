@@ -1,8 +1,14 @@
+:root {
+    --blue: #6591E0;
+    --darkblue: #083D7F;
+    --white: whitesmoke;
+}
+
 html, body {
-    background-color: whitesmoke;
-    background-image: url(/images/moon-close-up-picjumbo-com.jpg);
+    background-color: var(--white);
+    background-image: url(/images/bg-image.jpg);
     background-attachment: fixed;
-    height: 100vh;
+    /*height: 100vh;*/
     width: 100%;
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -13,9 +19,57 @@ html, body {
     background-repeat: no-repeat;
 }
 
+header {
+    position: sticky;
+    top: 0;
+}
 
 h1, h2, h3 {
     font-weight: 300;
+}
+nav {
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    position: sticky;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 10vh;
+    }
+
+ul {
+    display: flex;
+    gap: 2vw;
+    list-style: none;
+    }
+
+li{
+    display: inline-block;
+}
+   
+.socials-header {
+    display: flex;
+    gap: 2vw;
+}
+
+nav a {
+    color: var(--blue);
+    text-decoration: none;
+    font-weight: 300;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+nav a:hover {
+    color: var(--darkblue);
+}
+
+nav i{
+    font-size: 3vw;
 }
 
 .home {
@@ -51,11 +105,11 @@ h1, h2, h3 {
     font-size: 8vw;
     font-weight: 300;
     text-decoration: none;
-    color:#FFD43A;
+    color: var(--blue);
     transition: 0.3s ease;
 }
 .nav-item a:hover {
-    color: #FAB005;
+    color: var(--darkblue);
 }
 
 footer {
@@ -81,18 +135,67 @@ footer {
     display: inline-block;
     position: relative;
     width: auto;
-    color: #FFD43A;
+    color: var(--blue);
     font-size: 5vw;
     transition: 0.3s ease;
 
 } 
 .socials i:hover {
-    color: #FAB005;
+    color: var(--darkblue);
 }
 
 .home-about {
     margin-top: 50vh;
 }
+
+.projects {
+    flex: 1;
+    display: flex;
+    
+    padding-left: 3vw;
+    padding-right: 3vw;
+
+}
+
+.projects-left {
+    width: 30vw;
+
+}
+
+.kutas {
+    position: fixed;
+    width: 30vw;
+}
+.projects-left h1 {
+    color: whitesmoke;
+    margin-top: 20vh;
+   
+}
+.projects-left p {
+    color: whitesmoke;
+  
+}
+.projects-right {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 10vh;
+    margin-left: 10vw;
+}
+.project-card {
+    background-color: whitesmoke;
+    border: var(--blue) solid;
+    margin: 5px;
+    padding: 5px;
+    margin: auto;
+    text-align: center;
+    font-weight: 700;
+}
+.project-card img {
+    width: 40vw;
+    margin: 5vw;
+}
+
 
 @media (max-width: 786px) {
     
@@ -114,5 +217,16 @@ footer {
     .home-right {
         margin-top: 5vh;
     }
+    .projects {
+        flex-direction: column;
+    }
+    .kutas {
+        position:relative;
+        width: 100vw;
+    }
+    .projects-left h1 {
+        margin-top: 0;
+    }
     
 }
+

@@ -347,6 +347,11 @@ hr {width: 60%;}
     .about-left h1 {
         margin-top: 10px;
     }
-    
+    nav a{
+        font-size: 2rem;
+    }
+    nav i {
+        font-size: 2rem;
+    }
 }
 

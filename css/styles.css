@@ -25,8 +25,12 @@ header {
     z-index: 9;
 }
 
-h1, h2, h3 {
+h1, h2, h3, p {
     font-weight: 300;
+}
+
+p {
+    color: var(--white);
 }
 nav {
     
@@ -52,6 +56,35 @@ ul {
 li{
     display: inline-block;
 }
+/* Hamburger button */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    
+  }
+  
+  .hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #111;
+    display: block;
+    background-color: var(--blue);
+  }
+  
+  /* Desktop style */
+  .nav-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  
+  
    
 .socials-header {
     display: flex;
@@ -189,7 +222,7 @@ footer {
     text-align: center;
 }
 .project-card a {
-    text-decoration: none;
+    text-decoration: none
 }
 
 
@@ -244,6 +277,7 @@ hr {width: 60%;}
     display: block;
     margin-left: auto;
     margin-right: auto;
+    box-shadow: 12px 12px 20px rgba(0, 0, 0, 0.2);
 }
 .button {
     color: var(--white);
@@ -299,7 +333,37 @@ hr {width: 60%;}
 }
 
 @media (max-width: 786px) {
+    .hamburger {
+        display: flex;
+      }
     
+      .nav-content {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #fff;
+        padding: 1rem;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        z-index: 100;
+        width: 200px;
+      }
+    
+      .nav-content.active {
+        display: flex;
+      }
+    
+      .nav-content ul {
+        flex-direction: column;
+        gap: 1rem;
+      }
+    
+      .socials-header {
+        display: flex;
+        gap: 1rem;
+        margin-top: 1rem;
+      }
     .home {
         flex-direction: column;
     }

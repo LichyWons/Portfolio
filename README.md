@@ -1,6 +1,8 @@
 # Portfolio
 Krzysztof Bytniewski - Frontend Developer Portfolio
 
+![Running Website Mockup](screenshot.png)
+
 Welcome to my portfolio website! This project showcases my skills in HTML, CSS, and JavaScript with a minimalist and interactive design approach.
 
 🌐 Live Demo

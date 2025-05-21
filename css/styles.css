@@ -341,17 +341,17 @@ hr {width: 60%;}
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 60px;
-        right: 0;
+        top: 100px;
         background: #fff;
         padding: 1rem;
         box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         z-index: 100;
-        width: 200px;
+        width: 90%;
       }
     
       .nav-content.active {
         display: flex;
+        
       }
     
       .nav-content ul {
@@ -359,10 +359,12 @@ hr {width: 60%;}
         gap: 1rem;
       }
     
+      .nav-content ul li a {
+        font-size: xxx-large;
+      }
       .socials-header {
         display: flex;
         gap: 1rem;
-        margin-top: 1rem;
       }
     .home {
         flex-direction: column;
